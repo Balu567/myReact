@@ -1,16 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import First from './First';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Second from "./Second";
+import Fun1 from "./Fun1";
+import First from "./First";
+import Location from "./Location";
+import Locstate from "./Locstate";
 
 function App() {
-  const name = < h1 > balu</h1>;
+  const name = <h1> balu</h1>;
   return (
     <div className="App">
-      {name}
-      <First></First>
+      {/*passing through app.js */}
+      <Fun1 />
 
-      <header className="App-header">
+      {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>balu is src/App.js</code> and save to reload.
@@ -23,7 +27,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+  </header>*/}
     </div>
   );
 }
