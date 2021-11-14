@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       {/*passing through app.js */}
       <Fun1 />
+      <First />
 
       {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
