@@ -6,7 +6,6 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 function App() {
-  const name = <h1> balu</h1>;
   return (
     <div className="App">
       <Header />

@@ -1,20 +1,14 @@
 var faker = require("faker");
 
-const newdata = [
-  {
+let meta = () => {
+  return {
     name: faker.name.findName(),
     calories: faker.random.number(),
     fat: faker.random.number(),
     carbs: faker.random.number(),
     protein: faker.random.number(),
-  },
-  {
-    name: faker.name.findName(),
-    calories: faker.random.number(),
-    fat: faker.random.number(),
-    carbs: faker.random.number(),
-    protein: faker.random.number(),
-  },
-];
+  };
+};
 
+let newdata = [...Array(5)].map((_, idx) => meta());
 export default newdata;
