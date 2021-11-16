@@ -10,5 +10,5 @@ let meta = () => {
   };
 };
 
-let newdata = [...Array(5)].map((_, idx) => meta());
+let newdata = [...Array(9)].map((_, idx) => meta());
 export default newdata;
