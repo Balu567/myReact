@@ -12,8 +12,8 @@ import { useNavigate } from "react-router-dom";
 
 import Header from "../Header";
 import Footer from "../Footer";
-//import InboxIcon from "@mui/icons-material/Inbox";
-//import DraftsIcon from "@mui/icons-material/Drafts";
+import InboxIcon from "@mui/icons-material/Inbox";
+import DraftsIcon from "@mui/icons-material/Drafts";
 
 function SideMenu() {
   let navigate = useNavigate();
@@ -30,18 +30,18 @@ function SideMenu() {
           <List>
             <ListItem disablePadding>
               <ListItemButton onClick={handleSubmit}>
-                {/* <ListItemIcon>
+                <ListItemIcon>
                   <InboxIcon />
-                </ListItemIcon> */}
+                </ListItemIcon>
 
                 <ListItemText primary="First" />
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
-                {/* <ListItemIcon>
+                <ListItemIcon>
                   <DraftsIcon />
-                </ListItemIcon> */}
+                </ListItemIcon>
                 <ListItemText primary="Second" />
               </ListItemButton>
             </ListItem>
