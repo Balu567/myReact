@@ -11,9 +11,7 @@ import "../style.css";
 
 import newdata from "./data";
 import SideMenu from "../SideMenu";
-import Header from "../Header";
-import Footer from "../Footer";
-
+import Layout from "../Layout";
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
 }
@@ -31,7 +29,6 @@ console.log(newdata);
 function Details() {
   return (
     <div>
-      <Header />
       <div class="rowC">
         <SideMenu />
         <TableContainer component={Paper}>
@@ -64,7 +61,6 @@ function Details() {
           </Table>
         </TableContainer>
       </div>
-      <Footer></Footer>
     </div>
   );
 }

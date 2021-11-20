@@ -6,11 +6,12 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
+import theme from "../theme";
 
 function Footer() {
   return (
-    <Box sx={{ flexGrow: 1 }} color="color">
-      <AppBar position="static">
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static" color="secondary">
         <Toolbar>
           <IconButton
             size="large"

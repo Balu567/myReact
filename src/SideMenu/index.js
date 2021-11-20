@@ -10,8 +10,6 @@ import Divider from "@mui/material/Divider";
 
 import { useNavigate } from "react-router-dom";
 
-import Header from "../Header";
-import Footer from "../Footer";
 import InboxIcon from "@mui/icons-material/Inbox";
 import DraftsIcon from "@mui/icons-material/Drafts";
 
@@ -20,7 +18,7 @@ function SideMenu() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    navigate("/First");
+    navigate("/Dashboard");
   }
   return (
     <>
@@ -34,7 +32,7 @@ function SideMenu() {
                   <InboxIcon />
                 </ListItemIcon>
 
-                <ListItemText primary="First" />
+                <ListItemText primary="Dashboard" />
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>

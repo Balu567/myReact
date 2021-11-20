@@ -8,22 +8,26 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
+import theme from "../theme";
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 
 function Header() {
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
 
-  async function handleSubmit(event) {
-    event.preventDefault();
-    navigate("/");
-  }
+  // async function handleSubmit(event) {
+  //   event.preventDefault();
+  //   // navigate("/");
+  // }
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" color="secondary">
         <Toolbar>
-          <Button color="inherit" onClick={handleSubmit}>
+          <Button
+            color="inherit"
+            onclick={<NavLink exact activeClassName="active" to="/" />}
+          >
             Home
           </Button>
           <IconButton
