@@ -10,24 +10,25 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import theme from "../theme";
 
-import { useNavigate, NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
-  // let navigate = useNavigate();
+  let navigate = useNavigate();
 
-  // async function handleSubmit(event) {
-  //   event.preventDefault();
-  //   // navigate("/");
-  // }
+  async function handleSubmit(event) {
+    event.preventDefault();
+    navigate("/logout", { replace: true });
+  }
+  async function toHome(event) {
+    event.preventDefault();
+    navigate("/");
+  }
 
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="secondary">
         <Toolbar>
-          <Button
-            color="inherit"
-            onclick={<NavLink exact activeClassName="active" to="/" />}
-          >
+          <Button color="inherit" onClick={toHome}>
             Home
           </Button>
           <IconButton
@@ -43,7 +44,9 @@ function Header() {
           <Stack direction="row" spacing={2}>
             <Avatar alt="Balaraju" src="../static/images/butterfly.jpg" />
           </Stack>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" onClick={handleSubmit}>
+            logout
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>

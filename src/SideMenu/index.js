@@ -13,12 +13,17 @@ import { useNavigate } from "react-router-dom";
 import InboxIcon from "@mui/icons-material/Inbox";
 import DraftsIcon from "@mui/icons-material/Drafts";
 
-function SideMenu() {
+function SideMenu(props) {
   let navigate = useNavigate();
 
   async function handleSubmit(event) {
     event.preventDefault();
     navigate("/Dashboard");
+  }
+
+  async function onChange(event) {
+    event.preventDefault();
+    props.changeWord("sra");
   }
   return (
     <>
@@ -36,7 +41,7 @@ function SideMenu() {
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-              <ListItemButton>
+              <ListItemButton onClick={onChange}>
                 <ListItemIcon>
                   <DraftsIcon />
                 </ListItemIcon>
