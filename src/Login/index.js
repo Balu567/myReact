@@ -97,6 +97,7 @@ export default function Login() {
               label="Remember me"
             />
             <Button
+              class="ui button"
               type="submit"
               fullWidth
               variant="contained"
