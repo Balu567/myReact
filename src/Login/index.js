@@ -47,7 +47,22 @@ export default function Login() {
       password: data.get("password"),
     });
   };
+  //-------------------------------practice----------------------------------------------------
+  // let abc = "1";
+  // abc = "2";
+  // console.log(abc);
 
+  function x(y) {
+    var a = 7;
+    console.log(a);
+    y();
+  }
+
+  x(function y() {
+    console.log("y");
+  });
+
+  //---------------------------------------------------------------------------------------------
   return (
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
